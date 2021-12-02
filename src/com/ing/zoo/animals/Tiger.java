@@ -1,7 +1,7 @@
 package com.ing.zoo.animals;
 
 import com.ing.zoo.animals.actions.PerformsTrick;
-import com.ing.zoo.diets.Carnivore;
+import com.ing.zoo.animals.diets.Carnivore;
 
 import java.util.Random;
 
@@ -9,7 +9,7 @@ public class Tiger extends Carnivore implements PerformsTrick {
 
     public Tiger(String name)
     {
-        super(name, "Large Meow...");
+        super(name, "Large Meow...", "Grrr... Chomp!");
     }
 
     public void performTrick()

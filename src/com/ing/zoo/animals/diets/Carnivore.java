@@ -1,4 +1,4 @@
-package com.ing.zoo.diets;
+package com.ing.zoo.animals.diets;
 
 import com.ing.zoo.animals.Animal;
 
@@ -8,11 +8,12 @@ public abstract class Carnivore extends Animal {
 
     public String getEatMeatText() { return eatMeatText; }
 
-    public Carnivore(String name, String helloText) {
+    public Carnivore(String name, String helloText, String eatMeatText) {
         super(name, helloText);
+        this.eatMeatText = eatMeatText;
     }
 
-    void eatMeat(){
+    public void eatMeat(){
         System.out.println(eatMeatText);
     }
 }
