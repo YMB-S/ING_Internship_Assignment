@@ -1,23 +1,11 @@
 package com.ing.zoo.animals;
 
-public class Lion {
-    public String name;
-    public String helloText;
-    public String eatText;
+import com.ing.zoo.diets.Carnivore;
 
-    public Lion()
-    {
+public class Lion extends Carnivore {
+
+    public Lion(String name) {
+        super(name, "Rawr! Grrr....");
     }
 
-    public void sayHello()
-    {
-        helloText = "roooaoaaaaar";
-        System.out.println(helloText);
-    }
-
-    public void eatMeat()
-    {
-        eatText = "nomnomnom thx mate";
-        System.out.println(eatText);
-    }
 }
