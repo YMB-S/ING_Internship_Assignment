@@ -11,16 +11,6 @@ public class Zoo {
         commands[2] = "give meat";
         commands[3] = "perform trick";
 
-        Lion henk = new Lion();
-        henk.name = "henk";
-        Hippo elsa = new Hippo();
-        elsa.name = "elsa";
-        Pig dora = new Pig();
-        dora.name = "dora";
-        Tiger wally = new Tiger();
-        wally.name = "wally";
-        Zebra marty = new Zebra();
-        marty.name = "marty";
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Voer uw command in: ");
@@ -28,7 +18,6 @@ public class Zoo {
         String input = scanner.nextLine();
         if(input.equals(commands[0] + " henk"))
         {
-            henk.sayHello();
         }
         else
         {
