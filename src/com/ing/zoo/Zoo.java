@@ -48,6 +48,11 @@ public class Zoo {
 
             String whatToDo = commandsGiven[0];
             String thingToDo = commandsGiven.length > 1 ? commandsGiven[1] : null;
+            if(thingToDo == null)
+            {
+                System.out.println("Vul ook een tweede commando in!");
+                continue;
+            }
 
             switch(whatToDo){
 
@@ -96,7 +101,6 @@ public class Zoo {
     }
 
     void give(String typeOfFood){
-        System.out.println(typeOfFood);
         switch(typeOfFood){
             case "leaves":
                 // Make all Herbivores eat leaves
