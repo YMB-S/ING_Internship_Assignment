@@ -32,6 +32,8 @@ public class Zoo {
         animals.push(new Pig("Dora"));
         animals.push(new Tiger("Wally"));
         animals.push(new Zebra("Marty"));
+        animals.push(new Heron("Oscar"));
+        animals.push(new SurgeonFish("Dory"));
 
         return animals;
     }
